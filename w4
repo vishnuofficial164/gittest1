@@ -1,0 +1,270 @@
+root@TRC:~# cd /home/trc/Downloads
+root@TRC:/home/trc/Downloads# cd .
+root@TRC:/home/trc/Downloads# cd ..
+root@TRC:/home/trc# ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Sabeer  snap  Templates  Videos
+root@TRC:/home/trc# cd Documents
+root@TRC:/home/trc/Documents# ls
+ AnyDesk                     lu1624456i21xk.tmp   lu1624456i21xz.tmp           Smac%20PT.%20Aug.ods_1.ods            'Smac PT. Aug.ods'
+'config file 5700'           lu1624456i21xn.tmp  'perf wireless mac'           Smac%2520PT.%2520Aug.ods_1.ods_0.ods  'Smac PT. Aug.ods_1.ods'
+'jenkins installation.odt'   lu1624456i21xt.tmp  'SMAC2.0 10, 192 series'     'SMAC 3.0 Config'                      'Untitled 1.ods'
+ lu1624456i21xh.tmp          lu1624456i21xw.tmp   Smac%20PT.%20Aug.ods_0.ods  'smac 3 duplicate checking.ods'
+root@TRC:/home/trc/Documents# mkdir project1
+root@TRC:/home/trc/Documents# ls
+ AnyDesk                     lu1624456i21xn.tmp   project1                              'SMAC 3.0 Config'
+'config file 5700'           lu1624456i21xt.tmp  'SMAC2.0 10, 192 series'               'smac 3 duplicate checking.ods'
+'jenkins installation.odt'   lu1624456i21xw.tmp   Smac%20PT.%20Aug.ods_0.ods            'Smac PT. Aug.ods'
+ lu1624456i21xh.tmp          lu1624456i21xz.tmp   Smac%20PT.%20Aug.ods_1.ods            'Smac PT. Aug.ods_1.ods'
+ lu1624456i21xk.tmp         'perf wireless mac'   Smac%2520PT.%2520Aug.ods_1.ods_0.ods  'Untitled 1.ods'
+root@TRC:/home/trc/Documents# cd project1
+root@TRC:/home/trc/Documents/project1# touch w1 w2
+root@TRC:/home/trc/Documents/project1# ls
+w1  w2
+root@TRC:/home/trc/Documents/project1# vi w1
+root@TRC:/home/trc/Documents/project1# git init .
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/trc/Documents/project1/.git/
+root@TRC:/home/trc/Documents/project1# git config --global user.email "vishnu.official164@gmail.com"
+root@TRC:/home/trc/Documents/project1# git config --global user.name "vishnuofficial164"
+root@TRC:/home/trc/Documents/project1# git config --global user.name
+vishnuofficial164
+root@TRC:/home/trc/Documents/project1# git config --global user.email
+vishnu.official164@gmail.com
+root@TRC:/home/trc/Documents/project1# git init .
+Reinitialized existing Git repository in /home/trc/Documents/project1/.git/
+root@TRC:/home/trc/Documents/project1# ls
+w1  w2
+root@TRC:/home/trc/Documents/project1# git add w1
+root@TRC:/home/trc/Documents/project1# git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   w1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	w2
+
+root@TRC:/home/trc/Documents/project1# git w2
+git: 'w2' is not a git command. See 'git --help'.
+
+The most similar commands are
+	am
+	gc
+	mv
+	rm
+root@TRC:/home/trc/Documents/project1# git add w2
+root@TRC:/home/trc/Documents/project1# git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   w1
+	new file:   w2
+
+root@TRC:/home/trc/Documents/project1# git commit -m "initial commit"
+[master (root-commit) d1e316c] initial commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 w1
+ create mode 100644 w2
+root@TRC:/home/trc/Documents/project1# git status
+On branch master
+nothing to commit, working tree clean
+root@TRC:/home/trc/Documents/project1# ssh-keygen -t rsa -C "vishnu.official164@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:nLCCxl+ZMDbgrCpnm+d/4uuFl7wj0TnMobo/8TGdxFk vishnu.official164@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|  .              |
+| o .        E    |
+|  o = .  . o     |
+| o o + *..+      |
+|. + . ==S= .     |
+|.. . o+oO.o      |
+|o o ...+=+       |
+|.o oo +o+.       |
+|  ooo***..       |
++----[SHA256]-----+
+root@TRC:/home/trc/Documents/project1# /root/.ssh/id_rsa
+-bash: /root/.ssh/id_rsa: Permission denied
+root@TRC:/home/trc/Documents/project1# cd ..
+root@TRC:/home/trc/Documents# cd ..
+root@TRC:/home/trc# cd ..
+root@TRC:/home# cd ..
+root@TRC:/# cd /
+root@TRC:/# ls
+bin   cdrom  dev  home  lib32  libx32      media  opt   root  sbin  srv       sys  usr
+boot  debug  etc  lib   lib64  lost+found  mnt    proc  run   snap  swapfile  tmp  var
+root@TRC:/# /root/.ssh/id_rsa
+-bash: /root/.ssh/id_rsa: Permission denied
+root@TRC:/# cd root
+root@TRC:~# ls
+ Desktop   Documents   Downloads  'g -T'   minicom.log   Music   Pictures   Public   snap   teamviewer_amd64.deb   Templates   Videos
+root@TRC:~# ls -l /root/.ssh
+total 12
+-rw------- 1 root root 2622 Jan 27 09:58 id_rsa
+-rw-r--r-- 1 root root  582 Jan 27 09:58 id_rsa.pub
+-rw-r--r-- 1 root root  222 Jun  1  2023 known_hosts
+root@TRC:~# cat /root/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDPUwLs7/paPuQf/Osn/TFeGoDgOkz6ylL/qFJmKcrhMIINT6ZeAas9rzR9RwRlCfGe3+xqZ0jKh6pa8fCFcnbGoPaDur2eU3WEADnJibaP6bd24v6k9NoP83d0aAHK+qfjQWCc87f01Qn8spOPuZtfDIUIxHv8pT5MPQzfJAF6tIiERvnyadr4jlKobl74cX9LBqpVqxj2Xw4icZqId+uYYJfqUYjJICkIqD6TRkw6U0dtdjMmF6aTVMGoLApPrWgKXcRuw/dwyzbMw01LPtraMzOBuLB3IqiKIy5V9hECT+885MTv+L+vowXW78gjwTeiYz/x8R10jmCaj1Kf18Q0n4LyQ2wMM8eeyYqJ3Td0Y/vyn4qfJU4eYE6qkBsT7aVp6iZ7E53WI00RiYl+y13I5aKueMPo/H0xx+cS2yv58sDzBAupje75bcYOmZICNUcfhqxgJFOX9Qf+4tn7Kk+zxiqysmfFUpsU3pG04vdElMmMcW9mp9vmXNMOFDkK3OE= vishnu.official164@gmail.com
+root@TRC:~# cat /root/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDPUwLs7/paPuQf/Osn/TFeGoDgOkz6ylL/qFJmKcrhMIINT6ZeAas9rzR9RwRlCfGe3+xqZ0jKh6pa8fCFcnbGoPaDur2eU3WEADnJibaP6bd24v6k9NoP83d0aAHK+qfjQWCc87f01Qn8spOPuZtfDIUIxHv8pT5MPQzfJAF6tIiERvnyadr4jlKobl74cX9LBqpVqxj2Xw4icZqId+uYYJfqUYjJICkIqD6TRkw6U0dtdjMmF6aTVMGoLApPrWgKXcRuw/dwyzbMw01LPtraMzOBuLB3IqiKIy5V9hECT+885MTv+L+vowXW78gjwTeiYz/x8R10jmCaj1Kf18Q0n4LyQ2wMM8eeyYqJ3Td0Y/vyn4qfJU4eYE6qkBsT7aVp6iZ7E53WI00RiYl+y13I5aKueMPo/H0xx+cS2yv58sDzBAupje75bcYOmZICNUcfhqxgJFOX9Qf+4tn7Kk+zxiqysmfFUpsU3pG04vdElMmMcW9mp9vmXNMOFDkK3OE= vishnu.official164@gmail.com
+root@TRC:~# ssh -T git@github.com
+^C
+root@TRC:~# git clone git@github.com:vishnuofficial164/gittest1.git
+Cloning into 'gittest1'...
+^C
+root@TRC:~# git clone git@github.com:vishnuofficial164/gittest1.git
+Cloning into 'gittest1'...
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+root@TRC:~# git status
+fatal: not a git repository (or any of the parent directories): .git
+root@TRC:~# cd /
+root@TRC:/# ls
+bin   cdrom  dev  home  lib32  libx32      media  opt   root  sbin  srv       sys  usr
+boot  debug  etc  lib   lib64  lost+found  mnt    proc  run   snap  swapfile  tmp  var
+root@TRC:/# cd /home
+root@TRC:/home# ls
+trc
+root@TRC:/home# cd trc
+root@TRC:/home/trc# ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Sabeer  snap  Templates  Videos
+root@TRC:/home/trc# cd Documents
+root@TRC:/home/trc/Documents# ls
+ AnyDesk                     lu1624456i21xn.tmp   project1                              'SMAC 3.0 Config'
+'config file 5700'           lu1624456i21xt.tmp  'SMAC2.0 10, 192 series'               'smac 3 duplicate checking.ods'
+'jenkins installation.odt'   lu1624456i21xw.tmp   Smac%20PT.%20Aug.ods_0.ods            'Smac PT. Aug.ods'
+ lu1624456i21xh.tmp          lu1624456i21xz.tmp   Smac%20PT.%20Aug.ods_1.ods            'Smac PT. Aug.ods_1.ods'
+ lu1624456i21xk.tmp         'perf wireless mac'   Smac%2520PT.%2520Aug.ods_1.ods_0.ods  'Untitled 1.ods'
+root@TRC:/home/trc/Documents# cd projects
+-bash: cd: projects: No such file or directory
+root@TRC:/home/trc/Documents# cd project1
+root@TRC:/home/trc/Documents/project1# ls
+w1  w2
+root@TRC:/home/trc/Documents/project1# git clone git@github.com:vishnuofficial164/gittest1.git
+Cloning into 'gittest1'...
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+root@TRC:/home/trc/Documents/project1# ssh -T git@github.com
+^C
+root@TRC:/home/trc/Documents/project1# echo "Host github.com
+  Hostname ssh.github.com
+  Port 443" >> ~/.ssh/config
+root@TRC:/home/trc/Documents/project1# ping github.com
+PING github.com (20.207.73.82) 56(84) bytes of data.
+64 bytes from 20.207.73.82 (20.207.73.82): icmp_seq=1 ttl=110 time=25.1 ms
+64 bytes from 20.207.73.82 (20.207.73.82): icmp_seq=2 ttl=110 time=51.6 ms
+64 bytes from 20.207.73.82 (20.207.73.82): icmp_seq=3 ttl=110 time=27.7 ms
+64 bytes from 20.207.73.82 (20.207.73.82): icmp_seq=4 ttl=110 time=26.0 ms
+64 bytes from 20.207.73.82 (20.207.73.82): icmp_seq=5 ttl=110 time=23.5 ms
+64 bytes from 20.207.73.82 (20.207.73.82): icmp_seq=6 ttl=110 time=24.0 ms
+64 bytes from 20.207.73.82 (20.207.73.82): icmp_seq=7 ttl=110 time=35.3 ms
+^C
+--- github.com ping statistics ---
+7 packets transmitted, 7 received, 0% packet loss, time 6008ms
+rtt min/avg/max/mdev = 23.516/30.461/51.600/9.386 ms
+root@TRC:/home/trc/Documents/project1# git clone https://github.com/vishnuofficial164/gittest1.git
+Cloning into 'gittest1'...
+warning: You appear to have cloned an empty repository.
+root@TRC:/home/trc/Documents/project1# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	gittest1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+root@TRC:/home/trc/Documents/project1# git add .
+error: 'gittest1/' does not have a commit checked out
+fatal: adding files failed
+root@TRC:/home/trc/Documents/project1# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	gittest1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+root@TRC:/home/trc/Documents/project1# ls
+gittest1  w1  w2
+root@TRC:/home/trc/Documents/project1# cd gittest1
+root@TRC:/home/trc/Documents/project1/gittest1# touch w3 
+root@TRC:/home/trc/Documents/project1/gittest1# vi w3
+root@TRC:/home/trc/Documents/project1/gittest1# git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	w3
+
+nothing added to commit but untracked files present (use "git add" to track)
+root@TRC:/home/trc/Documents/project1/gittest1# git add .
+root@TRC:/home/trc/Documents/project1/gittest1# ls
+w3
+root@TRC:/home/trc/Documents/project1/gittest1# cd w3
+-bash: cd: w3: Not a directory
+root@TRC:/home/trc/Documents/project1/gittest1# git commit -m "Initial commit"
+[main (root-commit) d2895f5] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 w3
+root@TRC:/home/trc/Documents/project1/gittest1# git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/vishnuofficial164/gittest1.git'
+root@TRC:/home/trc/Documents/project1/gittest1# git push origin main
+Username for 'https://github.com': vishnuofficial164             
+Password for 'https://vishnuofficial164@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/vishnuofficial164/gittest1.git/'
+root@TRC:/home/trc/Documents/project1/gittest1# git remote -v
+origin	https://github.com/vishnuofficial164/gittest1.git (fetch)
+origin	https://github.com/vishnuofficial164/gittest1.git (push)
+root@TRC:/home/trc/Documents/project1/gittest1# git remote add origin https://github.com/vishnuofficial164/gittest1.git
+error: remote origin already exists.
+root@TRC:/home/trc/Documents/project1/gittest1# git push -u origin main
+Username for 'https://github.com': vishnuofficial164
+Password for 'https://vishnuofficial164@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/vishnuofficial164/gittest1.git/'
+root@TRC:/home/trc/Documents/project1/gittest1# git remote set-url origin https://github.com/vishnuofficial164/gittest1.git
+root@TRC:/home/trc/Documents/project1/gittest1# git push -u origin main
+Username for 'https://github.com': vishnuofficial164
+Password for 'https://vishnuofficial164@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 239 bytes | 239.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vishnuofficial164/gittest1.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+root@TRC:/home/trc/Documents/project1/gittest1# 
+
+
